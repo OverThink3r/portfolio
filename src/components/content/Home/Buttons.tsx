@@ -1,22 +1,36 @@
-const onGetCVClic = () => { 
-  window.open('https://drive.google.com/file/d/1P41Ddm9dvporBRdnakfS6EmnQRjG4OIh/view?usp=share_link', '_blank')
-}
+import { useEffect, useState } from "react"
 
 export const Buttons = () => {
+  const [emailCopied, setEmailCopied] = useState(false)
+
+  const onGetCVClic = () => { 
+    window.open('https://drive.google.com/file/d/1fHl9NLV4dFYoF1qB4O_qW1Tx_OawhtWF/view?usp=share_link', '_blank')
+  }
+  const copyMyMail = async () => {
+    setEmailCopied(true)
+    await navigator.clipboard.writeText('vlozaprado@gmail.com')
+    setTimeout(()=> {
+      setEmailCopied(false)
+    }, 1000)
+  }
+  
   return (
     <>
       <button
-        className="w-20 border-2 border-sky-500 bg-transparent hover:bg-sky-500 hover:text-white p-2 rounded-md text-sky-500 mx-3 min-w-fit		"
+        className="w-20 border-2 border-sky-500 bg-transparent hover:bg-sky-500 hover:text-white p-2 rounded-md text-sky-500 mx-3 min-w-fit"
         type="button"
         onClick={onGetCVClic} 
       >
-        Get CV
+        Get my CV
       </button>
       <button
-        className="w-20 border-2 border-emerald-500 bg-transparent text-emerald-500 hover:bg-emerald-400 hover:text-white p-2 rounded-md mx-3 min-w-fit		"
+        type="button"
+        className="w-20 border-2 border-emerald-500 bg-transparent text-emerald-500 hover:bg-emerald-400 hover:text-white p-2 rounded-md mx-3 min-w-fit"
+        onClick={copyMyMail}
       >
-        Email
+        Copy my Email
       </button>
+      { emailCopied && <span className="text-emerald-500">Copied!</span>}
     </>
   )
 }

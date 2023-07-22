@@ -4,5 +4,8 @@ export interface SkillInterface  {
   title: string
   body?: string
   tags?: string[],
-  Icon?: IconType
+  Icon?: IconType,
+  borderColor: string,
+  backgroundTagColor?: string,
+  textTagColor?: string,
 }
