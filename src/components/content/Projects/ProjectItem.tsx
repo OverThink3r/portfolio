@@ -29,7 +29,7 @@ export const ProjectItem = (props: ProjectInterface) => {
 
   const bodySide = () => {
     return (
-      <div className="relative w-full lg:w-1/2 flex flex-col gap-5 justify-center bg-white p-5 items-center">
+      <div className="relative w-full lg:w-1/2 flex flex-col gap-3 justify-center bg-white p-5 items-center">
         <h3 className="w-full font-bold text-3xl">{projectTitle}</h3>
         <div>
           <p className="">
@@ -40,7 +40,7 @@ export const ProjectItem = (props: ProjectInterface) => {
           { repositoryUrl && <a href={repositoryUrl} target="_blank" className="text-light mx-4 cursor-pointer hover:text-sky-500 hover:underline text-black/60">Code</a> }
           { projectUrl && <a href={projectUrl} target="_blank" className="text-light mx-4 cursor-pointer hover:text-emerald-300 hover:underline  text-black/60">Project</a> }
         </span>
-        <div className="flex m-2 flex-wrap">
+        <div className="flex my-5 flex-wrap">
           {
             skills?.map(skill => (
               <span
@@ -57,7 +57,7 @@ export const ProjectItem = (props: ProjectInterface) => {
   }
 
   return (
-    <div className={`item-project flex flex-col lg:flex-row ${borderSide} ${borderColor}`}>
+    <div className={`item-project flex flex-col lg:flex-row my-5 lg:my-0 shadow-xl lg:shadow-none ${borderSide} ${borderColor}`}>
      {
       (orientation === 'IMG-L') 
       ? (
