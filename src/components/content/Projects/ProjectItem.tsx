@@ -17,11 +17,11 @@ export const ProjectItem = (props: ProjectInterface) => {
 
   const imgSide = () => {
    return (
-      <div className="w-full lg:w-1/2 h-96">
+      <div className="w-full lg:w-1/2 h-full md:h-96">
         <img 
           src={projectPath}
           alt=""
-          className="w-full h-full object-cover" 
+          className="w-full h-full object-contain md:object-cover " 
         />
     </div>
     )
