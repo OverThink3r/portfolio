@@ -40,7 +40,7 @@ export const ProjectItem = (props: ProjectInterface) => {
           { repositoryUrl && <a href={repositoryUrl} target="_blank" className="text-light mx-4 cursor-pointer hover:text-sky-500 hover:underline text-black/60">Code</a> }
           { projectUrl && <a href={projectUrl} target="_blank" className="text-light mx-4 cursor-pointer hover:text-emerald-300 hover:underline  text-black/60">Project</a> }
         </span>
-        <div className="flex m-2">
+        <div className="flex m-2 flex-wrap">
           {
             skills?.map(skill => (
               <span

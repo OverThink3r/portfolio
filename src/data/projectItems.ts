@@ -32,7 +32,7 @@ export const projects: ProjectInterface[] = [
     borderSide: "border-r-4",
     orientation: "IMG-L",
     repositoryUrl: "https://github.com/OverThink3r/numerai-front",
-    skills: ['Git', 'Vue', 'Postgres', 'Postgrest']
+    skills: ['Git', 'Vue', 'Postgres']
   },
   {
     id: 4,
