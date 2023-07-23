@@ -24,7 +24,7 @@ export const HeaderSection = () => {
         </div>
       </a>
       
-      <div onClick={()=>setNavIsOpen(!navIsOpen)} className='text-3xl absolute right-8 top-6 cursor-pointer mr-8 -mt-2 md:hidden'>
+      <div onClick={()=>setNavIsOpen(!navIsOpen)} className='text-3xl absolute right-8 top-6 cursor-pointer -mt-2 md:hidden'>
       {navIsOpen ? <CgClose /> : <CgMenu />}
       </div>
 
