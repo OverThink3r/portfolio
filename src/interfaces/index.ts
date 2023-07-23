@@ -1,2 +1,2 @@
 export * from './SkillCardProps'
-export * from './projectInterface'
+export * from './ProjectInterface'

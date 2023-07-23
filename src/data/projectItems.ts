@@ -32,6 +32,7 @@ export const projects: ProjectInterface[] = [
     borderSide: "border-r-4",
     orientation: "IMG-L",
     repositoryUrl: "https://github.com/OverThink3r/numerai-front",
+    projectUrl: "https://numer-ai.netlify.app/#/",
     skills: ['Git', 'Vue', 'Postgres']
   },
   {
