@@ -28,7 +28,7 @@ export const HeaderSection = () => {
       {navIsOpen ? <CgClose /> : <CgMenu />}
       </div>
 
-      <Navbar open={navIsOpen} toggleNav={toggleNav}/>
+      <Navbar navIsOpen={navIsOpen} toggleNav={toggleNav}/>
       </div>
     </div>
   )
