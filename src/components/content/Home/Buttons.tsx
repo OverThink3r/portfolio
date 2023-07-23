@@ -4,7 +4,7 @@ export const Buttons = () => {
   const [emailCopied, setEmailCopied] = useState(false)
 
   const onGetCVClic = () => { 
-    window.open('https://drive.google.com/file/d/1fHl9NLV4dFYoF1qB4O_qW1Tx_OawhtWF/view?usp=share_link', '_blank')
+    window.open('https://drive.google.com/file/d/1n26Y9oH6XnHuJD_zBnuWufqKL7BW4bq1/view?usp=sharing', '_blank')
   }
   const copyMyMail = async () => {
     setEmailCopied(true)

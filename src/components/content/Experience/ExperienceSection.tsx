@@ -28,11 +28,11 @@ export const ExperienceSection = () => {
               <span className="italic text-emerald-600">Front End Developer</span>
               {/* <p className="text-gray-500 my-3">In abaton I have had the opportunity to work with clients at a corporate level and to contribute to develop innovative and strategic solutions that provide solutions to problems, applying monitoring technologies, reading large volumes of information and displaying them in a summarized and accurate way.</p> */}
               <ul className="list-disc list-inside text-gray-500">
-                <li>Construction of complex searches in relational and non-relational databases.</li>
-                <li>Elaboration of automatic ETL processes</li>
-                <li>Migration of static web applications to front end frameworks.</li>
-                <li>Development and implementation of web applications with responsive capabilities.</li>
-                <li>Writing documentation of the different processes and implemented solutions.</li>
+                <li className="">Construction of complex searches in relational and non-relational databases.</li>
+                <li className="">Elaboration of automatic ETL processes</li>
+                <li className="">Migration of static web applications to front end frameworks.</li>
+                <li className="">Development and implementation of web applications with responsive capabilities.</li>
+                <li className="">Writing documentation of the different processes and implemented solutions.</li>
               </ul>
             </div>
           </div>
