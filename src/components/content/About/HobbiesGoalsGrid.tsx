@@ -2,7 +2,7 @@
 
 export const HobbiesGoalsGrid = () => {
   return (
-    <div className="grid grid-cols-2 divide-x">
+    <div className="grid lg:grid-cols-2 divide-y grid-cols-1 lg:divide-x">
       <div className="p-2">
         <h4 className="text-emerald-500">Hobbies</h4>
         <ul className="list-disc list-inside text-black">
