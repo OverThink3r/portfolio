@@ -20,7 +20,7 @@ export const Carousel = () => {
   }
 
   useEffect(() => {
-    const slideInterval = setInterval(nextSlide, 3000)
+    const slideInterval = setInterval(nextSlide, 4000)
     return () => clearInterval(slideInterval)
   }, [])
 

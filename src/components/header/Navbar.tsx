@@ -20,14 +20,20 @@ export const Navbar = ({navIsOpen, toggleNav}: {navIsOpen: boolean, toggleNav: (
           ))
         }
 
-      <li className={`${navIsOpen && "my-8"}`}>
+      <li className={`${navIsOpen && "my-8"} mx-1`}>
         <a href="https://www.linkedin.com/in/vladimir-loza-ab569123b/" target="_blank">
-          { navIsOpen ? <span className="text-gray-500 hover:text-sky-500 hover:underline hover:ease-out">LinkedIn</span> : <FaLinkedin  className="mx-2 opacity-50 hover:text-sky-500 cursor-pointer"/> }
+          { navIsOpen 
+            ? <span className="text-gray-500 hover:text-sky-500 hover:underline hover:ease-out">LinkedIn</span> 
+            : <FaLinkedin  className="mx-2 opacity-50 hover:text-sky-700 cursor-pointer text-2xl"/> 
+          }
         </a>
       </li>
       <li className={`${navIsOpen && "my-8"}`}>
         <a href="https://github.com/OverThink3r" target="_blank">
-          { navIsOpen ? <span className="text-gray-500 hover:text-sky-500 hover:underline hover:ease-out">GitHub</span> : <FaGithubSquare className="mx-2 opacity-50 hover:text-sky-500 cursor-pointer" /> }
+          { navIsOpen 
+            ? <span className="text-gray-500 hover:text-sky-500 hover:underline hover:ease-out">GitHub</span> 
+            : <FaGithubSquare className="mx-2 opacity-50 hover:text-sky-700 cursor-pointer text-2xl" /> 
+          }
         </a>
       </li>
       </ul>

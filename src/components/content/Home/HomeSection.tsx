@@ -10,7 +10,7 @@ export const HomeSection = () => {
           <h3 className="text-xl mr-1">Hello</h3>
           <hr className="w-3/4 border-slate-500"/>
         </div>
-        <h2 className="w-full text-6xl my-5">My name is Vladimir Loza</h2>
+        <h2 className="w-full text-5xl md:text-6xl my-5">My name is Vladimir Loza</h2>
         <h3 className="w-full text-3xl text-slate-400">I'am a Front End Developer.</h3>
         <div className="w-full my-4 flex items-center">
           <Buttons />
