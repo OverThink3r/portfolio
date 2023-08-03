@@ -8,7 +8,6 @@ export const projects: ProjectInterface[] = [
     projectPath: "projects-images/kiripay.PNG",
     borderColor: "border-purple-400",
     borderSide: "border-r-4",
-    projectUrl: "https://comercial.kiritek.com/",
     orientation: "IMG-L",
     skills: ['Vue', 'React', 'AWS', 'Git', 'Spring Boot', 'MySQL', 'PrimeFlex']
   },

@@ -15,6 +15,25 @@ export const ProjectItem = (props: ProjectInterface) => {
     id,
   } = props
 
+  const projectButton = () => (
+    <button
+      type="button"
+      className="w-20 border-2 border-emerald-500 bg-transparent text-emerald-500 hover:bg-emerald-400 hover:text-white p-1 rounded-md mx-3 min-w-fit"
+    >
+      Code
+    </button>
+  )
+
+  const codeButton = () => (
+    <button
+      className="w-20 border-2 border-sky-500 bg-transparent hover:bg-sky-500 hover:text-white p-1 rounded-md text-sky-500 mx-3 min-w-fit"
+      type="button"
+    >
+      Project
+    </button>
+  )
+
+
   const imgSide = () => {
    return (
       <div className="w-full lg:w-1/2 h-full md:h-96">
@@ -36,11 +55,7 @@ export const ProjectItem = (props: ProjectInterface) => {
             {body}
           </p>
         </div>
-        <span className="absolute bottom-0 right-0 mb-5">
-          { repositoryUrl && <a href={repositoryUrl} target="_blank" className="text-light mx-4 cursor-pointer hover:text-sky-500 hover:underline text-black/60">Code</a> }
-          { projectUrl && <a href={projectUrl} target="_blank" className="text-light mx-4 cursor-pointer hover:text-emerald-300 hover:underline  text-black/60">Project</a> }
-        </span>
-        <div className="flex my-5 flex-wrap">
+        <div className="flex mb-10 md:my-5 flex-wrap justify-center">
           {
             skills?.map(skill => (
               <span
@@ -52,6 +67,10 @@ export const ProjectItem = (props: ProjectInterface) => {
             ))
           }
         </div>
+        <div className="absolute bottom-0 right-0 mb-5">
+          { repositoryUrl && <a href={repositoryUrl} target="_blank"> {projectButton()} </a> }
+          { projectUrl && <a href={projectUrl} target="_blank">{codeButton()}</a> }
+        </div>
       </div>
     )
   }
@@ -60,20 +79,13 @@ export const ProjectItem = (props: ProjectInterface) => {
     <div className={`item-project flex flex-col lg:flex-row my-5 lg:my-0 shadow-xl lg:shadow-none ${borderSide} ${borderColor}`}>
      {
       (orientation === 'IMG-L') 
-      ? (
-        <>
-          {imgSide()}
-          {bodySide()}
-        </>
-      )
-      : (
-        <>
-          {bodySide()}
-          {imgSide()}
-        </>
-      )
+      ? (<>
+          {imgSide()} {bodySide()}
+        </>)
+      : (<>
+          {bodySide()} {imgSide()}
+        </>)
      } 
-      
     </div>
   )
 }

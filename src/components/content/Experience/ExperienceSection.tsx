@@ -26,7 +26,6 @@ export const ExperienceSection = () => {
                 <h3 className="timeline-title text-2xl sm:text-3xl text-gray-600 hover:underline hover:opacity-60 hover:text-sky-600 font-semibold tracking-wide mb-1">#Abaton Technologies</h3> 
               </a>
               <span className="italic text-emerald-600">Front End Developer</span>
-              {/* <p className="text-gray-500 my-3">In abaton I have had the opportunity to work with clients at a corporate level and to contribute to develop innovative and strategic solutions that provide solutions to problems, applying monitoring technologies, reading large volumes of information and displaying them in a summarized and accurate way.</p> */}
               <ul className="list-disc list-inside text-gray-500">
                 <li className="">Construction of complex searches in relational and non-relational databases.</li>
                 <li className="">Elaboration of automatic ETL processes</li>
@@ -45,8 +44,7 @@ export const ExperienceSection = () => {
               <a href="https://kiritek.com/" target="_blank" className="">
                 <h3 className="timeline-title text-2xl sm:text-3xl text-gray-600 hover:underline hover:opacity-60 hover:text-sky-600 font-semibold tracking-wide mb-1">#Kiritek S.A de C.V</h3> 
               </a>
-              <span className="italic text-emerald-600">Front End Developer</span>
-              {/* <p className="text-gray-500 my-3">In this innovation and technology startup I had a great professional growth as a developer, I had the opportunity to work with productive projects, as well as contribute in the creation of a new MVP product and to be in contact with multiple development teams, obtaining several achievements:</p> */}
+              <span className="italic text-emerald-600">Full Stack Developer</span>
               <ul className="list-disc list-inside text-gray-500 mb-3">
                 <li>Restructuring of massive load of leads.</li>
                 <li>Reactivation of recruitment data update routines.</li>
@@ -67,7 +65,6 @@ export const ExperienceSection = () => {
                 <h3 className="timeline-title text-2xl sm:text-3xl text-gray-600 hover:underline hover:opacity-60 hover:text-sky-600 font-semibold tracking-wide mb-1">#Instituto Tecnológico de Morelia</h3> 
               </a>
               <span className="italic text-emerald-600">Full Stack Developer</span>
-              {/* <p className="text-gray-500 my-3">Development and implementation of web and mobile application designed to improve the process of tracking residents in different companies, to contribute in the CACEI certification of the company, performing several activities:</p> */}
               <ul className="list-disc list-inside text-gray-500">
                 <li>Design and implementation of API Rest.</li>
                 <li>Database administration.</li>
