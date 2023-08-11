@@ -20,7 +20,7 @@ export const Navbar = ({navIsOpen, toggleNav}: {navIsOpen: boolean, toggleNav: (
           ))
         }
 
-      <li className={`${navIsOpen && "my-8"} mx-3`}>
+      <li className={`${navIsOpen && "my-8"} ${!navIsOpen && 'mx-3'}`}>
         <a href="https://www.linkedin.com/in/vladimir-loza-ab569123b/" target="_blank">
           { navIsOpen 
             ? <span className="text-gray-500 hover:text-sky-500 hover:underline hover:ease-out">LinkedIn</span> 

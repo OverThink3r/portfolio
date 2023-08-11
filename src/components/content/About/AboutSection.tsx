@@ -17,7 +17,7 @@ export const AboutSection = () => {
             <HobbiesGoalsGrid />
           </div>
         </div>
-        <div className="w-full md:w-2/5 mx-3">
+        <div className="w-full md:w-2/5 mx-3 my-7 md:my-0">
           <img 
             src="profile-picture.jpg" 
             alt="User profile" 
