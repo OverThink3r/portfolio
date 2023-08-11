@@ -1,6 +1,7 @@
 import { SkillInterface } from "../interfaces/skillInteface";
-import {FaAws, FaGitAlt, FaNodeJs, FaReact, FaVuejs, FaDatabase} from 'react-icons/fa';
+import {FaAws, FaGitAlt, FaNodeJs, FaReact, FaVuejs, FaDatabase, FaCubes} from 'react-icons/fa';
 import { SiSpringboot } from 'react-icons/si'
+
 export const skillsItems:SkillInterface[] = [
   {
     title: 'Node',
@@ -10,12 +11,11 @@ export const skillsItems:SkillInterface[] = [
       'Express JS',
       'Nest JS',
       'Mongoose',
-      'Prisma',
-      'JWT',
     ],
     Icon: FaNodeJs ,
-    borderColor: 'border-green-500',
-    backgroundTagColor: "bg-green-500",
+    borderColor: 'border-green-400',
+    backgroundTagColor: "bg-green-400",
+    iconColor: 'text-green-400'
   },
   {
     title: 'React',
@@ -30,6 +30,8 @@ export const skillsItems:SkillInterface[] = [
     Icon: FaReact,
     borderColor: 'border-sky-400',
     backgroundTagColor: "bg-sky-400",
+    iconColor: 'text-sky-400',
+    textTagColor: 'text-white'
   },
   {
     title: 'Spring Boot',
@@ -40,8 +42,9 @@ export const skillsItems:SkillInterface[] = [
       'JUNIT',
     ],
     Icon: SiSpringboot,
-    borderColor: 'border-emerald-500',
-    backgroundTagColor: "bg-emerald-500"
+    borderColor: 'border-green-500',
+    backgroundTagColor: "bg-green-500",
+    iconColor: 'text-green-400'
   },
   {
     title: 'Vue',
@@ -53,11 +56,13 @@ export const skillsItems:SkillInterface[] = [
     ],
     Icon: FaVuejs,
     borderColor: 'border-lime-300',
-    backgroundTagColor: "bg-lime-300"
+    backgroundTagColor: "bg-lime-300",
+    iconColor: 'text-lime-400'
   },
   {
     title: 'Git',
     tags: [
+      'Git',
       'Github',
       'Gitlab',
       'Gitflow',
@@ -65,7 +70,8 @@ export const skillsItems:SkillInterface[] = [
     Icon: FaGitAlt,
     borderColor: 'border-red-500',
     backgroundTagColor: "bg-red-500",
-    textTagColor: "text-white"
+    textTagColor: "text-white",
+    iconColor: 'text-red-400'
   },
   {
     title: 'Amazon Web Services',
@@ -80,7 +86,8 @@ export const skillsItems:SkillInterface[] = [
     Icon : FaAws,
     borderColor: 'border-orange-500',
     backgroundTagColor: "bg-orange-500",
-    textTagColor: "text-white"
+    textTagColor: "text-white",
+    iconColor: 'text-orange-400'
   },
   {
     title: 'Database',
@@ -94,6 +101,23 @@ export const skillsItems:SkillInterface[] = [
     Icon : FaDatabase,
     borderColor: 'border-indigo-500',
     backgroundTagColor: "bg-indigo-500",
-    textTagColor: "text-white"
+    textTagColor: "text-white",
+    iconColor: 'text-indigo-400'
+  },
+  {
+    title: 'Others',
+    tags: [
+      'JWT',
+      'Docker',
+      'SCRUM',
+      'JQuery',
+      'Linux',
+      'SASS'
+    ],
+    Icon : FaCubes,
+    borderColor: 'border-purple-500',
+    backgroundTagColor: "bg-purple-500",
+    textTagColor: "text-white",
+    iconColor: 'text-purple-400'
   }
 ]

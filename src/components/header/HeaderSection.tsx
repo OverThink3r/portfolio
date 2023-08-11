@@ -9,13 +9,11 @@ export const HeaderSection = () => {
   const [navIsOpen, setNavIsOpen] = useState(false)
 
   const toggleNav = () => { 
-    console.log("entra");
-    
     setNavIsOpen(prev => !prev)
    }
   return (
-    <div className='shadow-md w-full fixed top-0 left-0 z-40'>
-      <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
+    <div className='shadow-md w-full fixed top-0 left-0 z-40 bg-white'>
+      <div className='md:flex items-center justify-between py-4 md:px-10 px-7 container mx-auto'>
       <a href="#home">
 
         <div className='font-bold cursor-pointer flex items-center text-gray-800'>

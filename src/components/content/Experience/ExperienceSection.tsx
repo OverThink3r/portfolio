@@ -1,11 +1,5 @@
 import { FaAngleRight } from "react-icons/fa";
 
-const experienceLabels = [
-  'Kiritek',
-  'Prestige English School',
-  'Vinculación'
-]
-
 export const ExperienceSection = () => {
   return (
     <section id="experience" className="container px-10 mx-auto my-52 flex flex-col justify-center scroll-my-20 text-black">

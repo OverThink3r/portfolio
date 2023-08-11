@@ -4,6 +4,7 @@ import { SkillsSection } from "./Skills"
 import {ExperienceSection} from "./Experience/ExperienceSection";
 import { ProjectsSection } from "./Projects";
 import { CoursesSection } from "./Courses";
+import {ContactForm} from "./Contact";
 
 export const Content = () => {
   return (
@@ -14,6 +15,7 @@ export const Content = () => {
       <ProjectsSection />
       <ExperienceSection />
       <CoursesSection />
+      <ContactForm />
     </>
   )
 }

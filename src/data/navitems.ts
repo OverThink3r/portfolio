@@ -5,5 +5,6 @@ export const menuItems = [
   'Skills',
   'Projects',
   'Experience',
-  'Courses'
+  'Courses',
+  'Contact'
 ]
