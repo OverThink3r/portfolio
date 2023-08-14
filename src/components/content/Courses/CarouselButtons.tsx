@@ -9,10 +9,10 @@ export const CarouselButtons = ({prevSlide, nextSlide}: Props) => {
   return (
     <>
       <button className="p-1" onClick={prevSlide}>
-        <FaChevronCircleLeft className="text-black/60 hover:text-black/100 text-lg md:text-3xl"/> 
+        <FaChevronCircleLeft className="text-emerald-500/60 hover:text-emerald-500/100 text-lg md:text-3xl"/>
       </button>
       <button className="p-1" onClick={nextSlide}>
-        <FaChevronCircleRight className="text-black/60 hover:text-black/100 text-lg md:text-3xl"/> 
+        <FaChevronCircleRight className="text-emerald-500/60 hover:text-emerald-500/100 text-lg md:text-3xl"/>
       </button>
     </>
 

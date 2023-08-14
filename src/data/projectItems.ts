@@ -9,7 +9,7 @@ export const projects: ProjectInterface[] = [
     borderColor: "border-purple-400",
     borderSide: "border-r-4",
     orientation: "IMG-L",
-    skills: ['Vue', 'React', 'AWS', 'Git', 'Spring Boot', 'MySQL', 'PrimeFlex']
+    skills: ['Vue', 'AWS', 'Git', 'Spring Boot', 'MySQL', 'PrimeFlex']
   },
   {
     id: 2,

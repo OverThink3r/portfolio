@@ -1,5 +1,5 @@
 import { AboutSection } from "./About"
-import { HomeSection } from "./Home"
+import { HeroSection } from "./Hero"
 import { SkillsSection } from "./Skills"
 import {ExperienceSection} from "./Experience/ExperienceSection";
 import { ProjectsSection } from "./Projects";
@@ -9,7 +9,7 @@ import {ContactForm} from "./Contact";
 export const Content = () => {
   return (
     <>
-      <HomeSection />
+      <HeroSection />
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />

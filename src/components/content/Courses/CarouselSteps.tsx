@@ -11,7 +11,7 @@ export const CarouselSteps = ({imgSrcs, current, setCourse}: Props) => {
       {imgSrcs.map((img, idx) => (
         <div 
           key={img} 
-          className={`transition-all w-3 h-3 bg-gray-500 rounded-full cursor-pointer ${current == idx ? 'p-2' : 'bg-opacity-50'}`}
+          className={`transition-all w-3 h-3 bg-emerald-500 rounded-full cursor-pointer ${current == idx ? 'p-2' : 'bg-opacity-50'}`}
           onClick={() => setCourse(idx)}
         >
         </div>

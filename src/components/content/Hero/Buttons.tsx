@@ -17,7 +17,7 @@ export const Buttons = () => {
   return (
     <>
       <button
-        className="block text-sm md:text-lg border-2 border-sky-500 bg-transparent hover:bg-sky-500 hover:text-white p-2 rounded-md text-sky-500 mx-3 min-w-fit"
+        className="block w-32 md:w-40 text-sm md:text-lg border-2 border-sky-500 bg-transparent hover:bg-sky-500 hover:text-white p-2 rounded-md text-sky-500"
         type="button"
         onClick={onGetCVClick} 
       >
@@ -25,10 +25,10 @@ export const Buttons = () => {
       </button>
       <button
         type="button"
-        className="block text-sm md:text-lg border-2 border-emerald-500 bg-transparent text-emerald-500 hover:bg-emerald-400 hover:text-white p-2 rounded-md mx-3 min-w-fit"
+        className="block w-32 md:w-40 text-sm md:text-lg border-2 border-emerald-500 bg-transparent text-emerald-500 hover:bg-emerald-400 hover:text-white p-2 rounded-md"
         onClick={onCopyEmail}
       >
-        Copy my Email
+        Copy my email
       </button>
       { emailCopied && <FaCheckCircle className="text-emerald-400 font-md" />}
     </>

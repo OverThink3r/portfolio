@@ -14,9 +14,8 @@ export const HeaderSection = () => {
   return (
     <div className='shadow-md w-full fixed top-0 left-0 z-40 bg-white'>
       <div className='md:flex items-center justify-between py-4 md:px-10 px-7 container mx-auto'>
-      <a href="#home">
-
-        <div className='font-bold cursor-pointer flex items-center text-gray-800'>
+      <a href="#hero">
+        <div className='w-40 lg:w-full font-bold cursor-pointer flex items-center text-gray-800'>
           <FaAngleRight />
           <span>Vladimir Loza</span>
         </div>

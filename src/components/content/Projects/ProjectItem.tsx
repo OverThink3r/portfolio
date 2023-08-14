@@ -49,18 +49,18 @@ export const ProjectItem = (props: ProjectInterface) => {
   const bodySide = () => {
     return (
       <div className="relative w-full lg:w-1/2 flex flex-col gap-3 justify-center bg-white p-5 items-center">
-        <h3 className="w-full font-bold text-3xl">{projectTitle}</h3>
+        <h3 className="w-full font-bold text-2xl md:text-3xl">{projectTitle}</h3>
         <div>
-          <p className="">
+          <p className="text-sm md:text-md">
             {body}
           </p>
         </div>
-        <div className="flex mb-10 md:my-5 flex-wrap justify-center">
+        <div className="flex mb-10 md:my-5 flex-wrap justify-center ">
           {
             skills?.map(skill => (
               <span
                 key={`${id}_${skill}`}
-                className={`inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700/70 mr-2 mb-2`}
+                className="inline-block bg-slate-50 border border-black-[0.1] rounded-md px-3 py-1 text-xs md:text-sm font-semibold text-gray-700/70 mr-2 mb-2"
               >
                 {skill}
               </span>
@@ -79,12 +79,8 @@ export const ProjectItem = (props: ProjectInterface) => {
     <div className={`item-project flex flex-col lg:flex-row my-5 lg:my-0 shadow-xl lg:shadow-none ${borderSide} ${borderColor}`}>
      {
       (orientation === 'IMG-L') 
-      ? (<>
-          {imgSide()} {bodySide()}
-        </>)
-      : (<>
-          {bodySide()} {imgSide()}
-        </>)
+      ? (<> {imgSide()} {bodySide()} </>)
+      : (<> {bodySide()} {imgSide()} </>)
      } 
     </div>
   )

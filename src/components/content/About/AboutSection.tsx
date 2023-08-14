@@ -10,14 +10,14 @@ export const AboutSection = () => {
         <FaAngleRight />
         About me
       </h2>
-      <div className="flex flex-col md:flex-row justify-center items-center">
-        <div className="w-full md:w-2/5 mx-3">
+      <div className="flex flex-col lg:flex-row justify-center items-center">
+        <div className="w-full lg:w-2/5 mx-3">
           <AboutDescription />
           <div className="px-2">
             <HobbiesGoalsGrid />
           </div>
         </div>
-        <div className="w-full md:w-2/5 mx-3 my-7 md:my-0">
+        <div className="w-full lg:w-2/5 mx-3 my-7 md:my-0">
           <img 
             src="profile-picture.jpg" 
             alt="User profile" 
