@@ -1,6 +1,30 @@
 import { SkillInterface } from "../interfaces/skillInteface";
 import {FaAws, FaGitAlt, FaNodeJs, FaReact, FaVuejs, FaDatabase, FaCubes} from 'react-icons/fa';
 import { SiSpringboot } from 'react-icons/si'
+import {
+  AmazonwebservicesOriginalWordmarkIcon,
+  BootstrapOriginalIcon,
+  Css3PlainIcon, ExpressOriginalIcon,
+  GithubOriginalIcon, GitlabOriginalIcon,
+  GitOriginalIcon,
+  Html5OriginalIcon,
+  JavaOriginalIcon,
+  JavascriptOriginalIcon,
+  JestPlainIcon,
+  JqueryOriginalIcon,
+  MongodbOriginalIcon,
+  MysqlOriginalIcon,
+  NodejsOriginalIcon,
+  PhpOriginalIcon,
+  PostgresqlOriginalIcon,
+  ReactOriginalIcon,
+  SassOriginalIcon,
+  SpringOriginalIcon,
+  TailwindcssPlainIcon,
+  TypescriptOriginalIcon,
+  VuejsOriginalIcon
+} from "react-devicons";
+import {SkillItem} from "../interfaces";
 
 export const skillsItems:SkillInterface[] = [
   {
@@ -120,4 +144,111 @@ export const skillsItems:SkillInterface[] = [
     textTagColor: "text-white",
     iconColor: 'text-purple-400'
   }
+]
+
+export const languages: SkillItem[] = [
+  {
+    label: "JavaScript",
+    Icon: JavascriptOriginalIcon,
+  },
+  {
+    label: "Typescript",
+    Icon: TypescriptOriginalIcon,
+  },
+  {
+    label: "Java",
+    Icon: JavaOriginalIcon
+  },
+  {
+    label: "PHP",
+    Icon: PhpOriginalIcon,
+  },
+]
+
+export const webTech: SkillItem[] = [
+  {
+    label: "HTML",
+      Icon: Html5OriginalIcon
+  },
+  {
+    label: "CSS",
+      Icon: Css3PlainIcon
+  },
+  {
+    label: "SASS",
+      Icon: SassOriginalIcon
+  },
+  {
+    label: "JQuery",
+      Icon: JqueryOriginalIcon
+  },
+  {
+    label: "Tailwind CSS",
+    Icon: TailwindcssPlainIcon
+  },
+  {
+    label: "Bootstrap",
+    Icon: BootstrapOriginalIcon
+  },
+]
+
+export const frameworks: SkillItem[] = [
+  {
+    label: "Express.js",
+    Icon: ExpressOriginalIcon
+  },
+  {
+    label: "Node.js",
+    Icon: NodejsOriginalIcon
+  },
+  {
+    label: "Spring Boot",
+    Icon: SpringOriginalIcon
+  },
+  {
+    label: "React.js",
+    Icon: ReactOriginalIcon
+  },
+  {
+    label: "Vue.js",
+    Icon: VuejsOriginalIcon
+  },
+]
+
+export const technologies: SkillItem[] = [
+  {
+    label: "Git",
+    Icon: GitOriginalIcon
+  },
+  {
+    label: "Github",
+    Icon: GithubOriginalIcon
+  },
+  {
+    label: "Gitlab",
+    Icon: GitlabOriginalIcon
+  },
+  {
+    label: "AWS",
+    Icon: AmazonwebservicesOriginalWordmarkIcon
+  },
+  {
+    label: "Jest",
+    Icon: JestPlainIcon
+  },
+]
+
+export const dataBaseTech: SkillItem[] = [
+  {
+    label: "MySQL",
+    Icon: MysqlOriginalIcon
+  },
+  {
+    label: "Postgres",
+    Icon: PostgresqlOriginalIcon
+  },
+  {
+    label: "MongoDB",
+    Icon: MongodbOriginalIcon
+  },
 ]

@@ -1,7 +1,12 @@
 import { FaAngleRight } from "react-icons/fa"
-import { skillsItems } from "../../../data/skillsItems"
-import { SkillCard } from "./SkillCard"
+import {JavascriptOriginalIcon} from "react-devicons";
+import {dataBaseTech, frameworks, languages, technologies, webTech} from "../../../data/skillsItems"
+import {SkillsList} from "./SkillsList";
+// import { SkillCard } from "./SkillCard"
 
+const temp = () => {
+  return <JavascriptOriginalIcon />
+}
 export const SkillsSection = () => {
   return (
     <section id="skills" className="container px-10 mx-auto text-white my-52 flex flex-col justify-center scroll-my-20">
@@ -9,13 +14,11 @@ export const SkillsSection = () => {
         <FaAngleRight />
         Skills
       </h2>
-      <div className="flex justify-center flex-wrap gap-4">
-        {
-          skillsItems.map(skill => (
-            <SkillCard skill={skill} key={skill.title} />
-          ))
-        }
-      </div>
+      <SkillsList skills={languages} />
+      <SkillsList skills={webTech} />
+      <SkillsList skills={technologies} />
+      <SkillsList skills={frameworks} />
+      <SkillsList skills={dataBaseTech} />
     </section>
   )
 }
