@@ -6,5 +6,5 @@ export const menuItems = [
   'Projects',
   'Experience',
   'Courses',
-  'Contact'
+  // 'Contact'
 ]

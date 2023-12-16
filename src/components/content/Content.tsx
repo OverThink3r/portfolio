@@ -15,7 +15,7 @@ export const Content = () => {
       <ProjectsSection />
       <ExperienceSection />
       <CoursesSection />
-      <ContactForm />
+      {/* <ContactForm /> */}
     </>
   )
 }

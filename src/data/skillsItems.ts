@@ -14,6 +14,7 @@ import {
   JqueryOriginalIcon,
   MongodbOriginalIcon,
   MysqlOriginalIcon,
+  NextjsOriginalWordmarkIcon,
   NodejsOriginalIcon,
   PhpOriginalIcon,
   PostgresqlOriginalIcon,
@@ -206,8 +207,12 @@ export const frameworks: SkillItem[] = [
     Icon: SpringOriginalIcon
   },
   {
-    label: "React.js",
+    label: "React",
     Icon: ReactOriginalIcon
+  },
+  {
+    label: "Next.js",
+    Icon: NextjsOriginalWordmarkIcon
   },
   {
     label: "Vue.js",
